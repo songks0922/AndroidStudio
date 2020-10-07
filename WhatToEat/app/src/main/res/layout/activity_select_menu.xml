@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/mainback"
+    android:layout_height="match_parent"
+    tools:context=".SelectMenu">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b1"
+                android:fontFamily="@font/cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FF88"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="한식" />
+
+            <Button
+                android:id="@+id/b2"
+                android:fontFamily="@font/cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FF88"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="탕/찌개" />
+
+            <Button
+                android:id="@+id/b3"
+                android:fontFamily="@font/cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FF88"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="중식" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b4"
+                android:background="#FF88"
+                android:fontFamily="@font/cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="일식" />
+
+            <Button
+                android:id="@+id/b5"
+                android:background="#FF88"
+                android:fontFamily="@font/cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="돌아가기" />
+
+            <Button
+                android:id="@+id/b6"
+                android:background="#FF88"
+                android:fontFamily="@font/cafe"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="양식" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b7"
+                android:background="#FF88"
+                android:fontFamily="@font/cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="해장" />
+
+            <Button
+                android:id="@+id/b8"
+                android:background="#FF88"
+                android:fontFamily="@font/cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="간편식" />
+
+            <Button
+                android:id="@+id/b9"
+                android:background="#FF88"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="기타" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/resion"
+        android:background="#FFFF"
+        android:fontFamily="@font/cafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="지역 입력"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</android.support.constraint.ConstraintLayout>
